@@ -1,0 +1,33 @@
+.actors {
+  text-align: center;
+}
+
+.actors__list {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.actors__item {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid $grey-opacity-30;
+}
+
+.actors__names-wrapper {
+  text-align: left;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.actors__item-img {
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.actors__name {
+  color: $white;
+}

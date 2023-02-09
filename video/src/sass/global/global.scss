@@ -1,0 +1,64 @@
+.outer-wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.inner-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-1440) {
+    padding: 0 40px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.uppercase-mod {
+  text-transform: uppercase;
+}
+
+.error {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.kinopoisk-link {
+  display: block;
+  max-width: 140px;
+  padding: 20px 0;
+  color: $yellow;
+  font-size: 26px;
+  transition: 0.5s;
+
+  &:hover {
+    color: $yellow-hover;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
