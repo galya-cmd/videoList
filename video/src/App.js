@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ROUTES from '../../routes/routes';
+import { PageWrapper } from './layout/page-wrapper';
+import { ActorsPage } from './pages/actors-page';
+import { HomePage } from '../pages/home-page';
+import { SearchPage } from '../pages/keyword-search-page';
+import { MoviePage } from '../pages/movie-page';
+import { PersonalityPage } from '../pages/personality-page';
+import { PopularPage } from '../pages/popular-page';
+import { Top250Page } from '../pages/top250-page';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PageWrapper />
+      <ActorsPage/>
+
     </div>
   );
 }
