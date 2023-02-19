@@ -1,5 +1,5 @@
 import React from 'react';
-import MyComponent from './fech';
+import Fech from './components/Fech';
 import Main from './components/main/Main';
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
   
     return(
       <div className='App'>
-      <MyComponent/>
+      <Fech/>
       <Main/>
       </div>
     )

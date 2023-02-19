@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import Main from './components/main/Main';
-import axios from 'react';
+import Main from './main/Main';
 
 
 
-function MyComponent() {
+
+function Fech() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -49,15 +49,21 @@ function MyComponent() {
       
      <h1>Test</h1>
       
+       
+        {items?.map(el => 
+         (<Main key={el.kinopoiskId} nameRu={el.nameRu} type={el.type} year={el.year} poster={el.posterUrl} ratingKinopoisk={el.ratingKinopoisk} />) 
         
+            )}
+       
       
-     {items?.map(el => <Main key={el.kinopoiskId} name={el.nameRu} type={el.type} year={el.year} poster={el.posterUrl } /> )}
+     
 
       
       </>
     );
   }
 }
-{/* <li key={el.kinopoiskId}> {el.nameRu}  {el.type} {el.year} {el.posterUrl }</li> */}
 
-export default MyComponent;
+
+
+export default React.memo(Fech);
